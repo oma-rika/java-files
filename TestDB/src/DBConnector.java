@@ -1,8 +1,3 @@
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
-import com.mysql.jdbc.Connection;
-
 /**
  *
  */
@@ -11,18 +6,27 @@ import com.mysql.jdbc.Connection;
  * @author testuser
  *
  */
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
+import com.mysql.jdbc.Connection;
+/**
+ *
+ * <p>MySQLに接続するためのユーティリティクラスです<br>
+ * ルートアカウントにてDBに接続されます</p>
+ */
 public class DBConnector {
-	/*
+	/**
 	 * JDBCドライバー名
 	 */
 	private static String driverName = "com.mysql.jdbc.Driver";
-	/*
-	 * データベース接続URL
+	/**
+	 * データベース接続 URL
 	 */
 	private static String url = "jdbc:mysql://localhost/testdb?autoReconnect=true&useSSL=false";
 	/**
 	 * データベース接続ユーザー名
+	 *
 	 */
 	private static String user = "root";
 	/**
@@ -30,18 +34,17 @@ public class DBConnector {
 	 */
 	private static String password = "mysql";
 
-
 	public Connection getConnection(){
 		Connection con = null;
 		try{
 			Class.forName(driverName);
-			con = (Connection)DriverManager.getConnection(url,user,password);
-		} catch (ClassNotFoundException e){
+			con = (Connection) DriverManager.getConnection(url, user, password);
+		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e){
 			e.printStackTrace();
 		}
 		return con;
 	}
-}
 
+}

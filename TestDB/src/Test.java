@@ -2,10 +2,21 @@
 public class Test {
 
 	public static void main(String[] args) {
-		// Testを作成してインスタンス化および実行する
+		// TODO 自動生成されたメソッド・スタブ
 		TestUserDAO dao = new TestUserDAO();
 		dao.select("taro", "123");
+
+		dao.selectAll();
+
 		dao.selectByName("taro");
+
+		dao.selectByPassword("123");
+
+		dao.updateUserNAmeByUserName("taro", "saburo");
+
+		dao.insert(4, "shiro", "012");
+
+		dao.delete("shiro");
 	}
 
 }
