@@ -9,14 +9,14 @@
 <body>
 	<input type="button" value="HelloServlet" onClick="location.href='HelloServlet'">
 	<input type="button" value="WelcomeServlet" onClick="location.href='welcome.jsp'">
-	<input type="button" value="問い合わせ" onClick="location.href='inquiry.jps'">
-	<p>GET通信</p>
+	<input type="button" value="問い合わせ" onClick="location.href='inquiry.jsp'">
+	GET通信
 	<form method="get" action="TestServlet">
 		<input type="text" name="username">
 		<input type="password" name="password">
 		<input type="submit" value="送信">
 	</form>
-	<p>POST通信</p>
+	POST通信
 	<form method="post" action="TestServlet">
 		<input type="text" name="username">
 		<input type="password" name="password">
