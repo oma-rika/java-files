@@ -1,6 +1,7 @@
 /HelloServlet.class
 /InquiryServlet.class
+/MySQLServlet.class
 /TestServle.class
 /TestServlet.class
 /WelcomeServlet.class
-/MySQLServlet.class
+/ChkLoadJdbc.class

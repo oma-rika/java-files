@@ -74,6 +74,8 @@ public class MySQLServlet extends HttpServlet {
 			out.println("ClassNotFoundException:" + e.getMessage());
 		} catch (SQLException e) {
 			out.println("SQLException:" + e.getMessage());
+		} catch (Exception e) {
+			out.println("Exception:" + e.getMessage());
 		} finally {
 			try {
 				if(conn != null){
