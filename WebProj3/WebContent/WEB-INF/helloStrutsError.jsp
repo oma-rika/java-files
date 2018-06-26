@@ -5,11 +5,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>INDEX</title>
+<title>HelloStrutsError</title>
 </head>
 <body>
-  <s:form action="HelloStrutsAction">
-    <s:submit value="HelloStruts" />
-  </s:form>
+  <h1>エラーが発生しました</h1>
+  <br>
+  <h3><s:property value="result" /></h3>
 </body>
 </html>
